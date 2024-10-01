@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url(acade.jpg);
+            background-size: cover; /* Faz a imagem ocupar toda a área do cabeçalho */
+            color: #fff8f8;
+            padding: 10px 0;
+            text-align: center;
+            height: 200px;
+            position: relative;
+            z-index: 1; /* Garante que o header fique acima da nav */
+            
+        }
+
+        nav {
+            
+    background-color: rgba(10, 4, 4, 0.5); /* Fundo escuro com transparência */
+    position: fixed; /* Fixa a nav no topo */
+    top: 205px; /* Altere para o valor da altura do seu header */
+    width: 100%; /* Largura total */
+    z-index: 2; /* Garante que a nav fique acima do conteúdo */
+    color: black;
+    
+}
+     
+        nav ul {
+            list-style-type:none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Centraliza os itens */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px; /* Ajuste do padding */
+        }
+
+        nav a:hover {
+            background-color: #000000;
+        }
+
+        .content {
+            padding: 120px 20px; /* Adiciona padding superior para não cobrir o conteúdo */
+            text-align: center;
+            margin-top: -120px;
+        }
+
+        #img2 {
+            width: 300px;
+            height: 300px;
+        }
+
+        #titulo {
+            font-family: cursive;
+            
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(203, 220, 220);
+            min-width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(5, 0, 0, 0.2);
+            z-index: 5;
+            color: aliceblue;
+        }
+
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(48, 33, 48);
+            color: #fff;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .menu-btn {
+            background-color: #773030;
+        }
+
+        .menu-btn {
+            background-color: rgb(247, 247, 247);
+            color: rgb(0, 0, 0);
+            width: 35px;
+            height: 35px; 
+            font-size: 35px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #botao1 {
+            background-color: black;
+        }
+
+        #botao2 {
+            background-color: rgb(175, 195, 194);
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>CyanXtreme gym</h1>
+        <img id="banner" src="banner.jpeg" alt="">
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Exercícios</a></li>
+        
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <h2 id="titulo">Bem-vindo ao nosso Site!</h2>
+        <h3 id="titulo">Aqui você encontra os melhores exercícios para o seu objetivo</h3>
+    </div>
+</body>
+</html>
+
+
